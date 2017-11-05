@@ -1,0 +1,42 @@
+.swipeable-products {
+	display: block;
+	position: relative;
+	background: #f1f2f4;
+	animation: fadein 0.3s linear;
+	.products-ctn {
+		display: block;
+		width: 100%;
+		.products-list {
+			display: flex;
+			overflow: hidden;
+			will-change: transform;
+			-webkit-backface-visibility: hidden;
+			font-smoothing: antialiased !important;
+			-moz-osx-font-smoothing: antialiased !important;
+			-webkit-font-smoothing: antialiased !important;
+			backface-visibility:hidden;
+			transform:scale(1.0, 1.0);
+			.product-item {
+				position: relative;
+				background: white;
+				overflow: hidden;
+			}
+		}
+		.isAnimatable {
+			transition: transform 0.25s;
+		}
+
+		.products-list::before {
+			content: '';
+			height: 15px;
+		}
+	}
+}
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

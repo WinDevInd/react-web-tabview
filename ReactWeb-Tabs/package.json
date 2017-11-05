@@ -1,0 +1,28 @@
+{
+  "name": "react-web-tabs",
+  "version": "0.0.1",
+  "description": "Tabs component for react web (mobile only)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WinDevInd/react-web-tabs.git#master"
+  },
+  "keywords": [
+    "Tabs",
+    "tabview",
+    "tabsview",
+    "react-viewpager-with-tab",
+    "tabs-view",
+    "reactjs-tab",
+    "tab"
+  ],
+  "author": "Jaykumar K Daftary (Windev)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WinDevInd/react-web-tabs/issues"
+  },
+  "homepage": "https://github.com/WinDevInd/react-web-tabs#readme"
+}

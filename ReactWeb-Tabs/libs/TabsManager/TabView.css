@@ -1,0 +1,50 @@
+.tabHeaderContainer {
+	position: relative;
+	animation: fadein 0.5s linear;
+	color: #818181;
+    font-size: 13px;
+    background: white;
+	width:100%;
+	white-space: nowrap;
+	overflow-x: scroll;
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .35);
+	font-weight: 600;
+	.tabheaders {
+		list-style-type: none;
+		 position: relative;
+		 z-index: 1;
+
+		.tabheader {
+			position: relative;
+			display: inline-block;
+			overflow: hidden;
+			min-width: 30px;
+			height: 100%;
+			text-align: center;
+			text-transform: uppercase;
+			vertical-align: top;
+			white-space: nowrap;
+		}
+	}
+	.tabslider {
+		position: absolute;
+		height: 3px;
+		width: 1px;
+		bottom: 0px;
+		will-change: transform;
+		background-color: #2874f0;
+		transform-origin: left top;
+		transform: scale(0, 1) translate3d(0, 0, 0);
+	}
+	.animateSlider{
+		transition: transform 0.2s cubic-bezier(0, 0, 0.3, 1);
+	}
+}
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
