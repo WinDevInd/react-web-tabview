@@ -1,6 +1,6 @@
 {
-  "name": "react-web-tabs",
-  "version": "0.0.1",
+  "name": "react-web-tabview",
+  "version": "0.0.2",
   "description": "Tabs component for react web (mobile only)",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WinDevInd/react-web-tabs.git#master"
+    "url": "git+https://github.com/WinDevInd/react-web-tabview.git#master"
+  },
+  "dependencies": {
+    "react": "^15.3.0"
   },
   "keywords": [
     "Tabs",
@@ -22,7 +25,7 @@
   "author": "Jaykumar K Daftary (Windev)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/WinDevInd/react-web-tabs/issues"
+    "url": "https://github.com/WinDevInd/react-web-tabview/issues"
   },
-  "homepage": "https://github.com/WinDevInd/react-web-tabs#readme"
+  "homepage": "https://github.com/WinDevInd/react-web-tabview#readme"
 }
