@@ -1,0 +1,137 @@
+.tabscontrol {
+	display: block;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	.headerCtn{
+		position: relative;
+		width:100%;
+		z-index: 1;
+	}
+	.fixed{
+		position: fixed;
+		width:100%;
+		background: white;
+		transition: 0.3s transform cubic-bezier(0.22, 0.61, 0.36, 1);
+
+	}
+	.tabcontent{
+		position: relative;
+		overflow: hidden;
+	}
+}
+.swipeable-products {
+	display: block;
+	position: relative;
+	background: #f1f2f4;
+	animation: fadein 0.3s linear;
+	.products-ctn {
+		display: block;
+		width: 100%;
+		.products-list {
+			display: flex;
+			overflow: hidden;
+			will-change: transform;
+			-webkit-backface-visibility: hidden;
+			font-smoothing: antialiased !important;
+			-moz-osx-font-smoothing: antialiased !important;
+			-webkit-font-smoothing: antialiased !important;
+			backface-visibility:hidden;
+			transform:scale(1.0, 1.0);
+			.product-item {
+				position: relative;
+				background: white;
+				overflow: hidden;
+			}
+		}
+		.isAnimatable {
+			transition: transform 0.25s;
+		}
+
+		.products-list::before {
+			content: '';
+			height: 15px;
+		}
+	}
+}
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.tabHeaderContainer {
+	position: relative;
+	animation: fadein 0.5s linear;
+	color: #818181;
+    font-size: 13px;
+    background: white;
+	width:100%;
+	white-space: nowrap;
+	overflow-x: scroll;
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .35);
+	font-weight: 600;
+	.tabheaders {
+		list-style-type: none;
+		 position: relative;
+		 z-index: 1;
+
+		.tabheader {
+			position: relative;
+			display: inline-block;
+			overflow: hidden;
+			min-width: 30px;
+			height: 100%;
+			text-align: center;
+			text-transform: uppercase;
+			vertical-align: top;
+			white-space: nowrap;
+		}
+	}
+	.tabslider {
+		position: absolute;
+		height: 3px;
+		width: 1px;
+		bottom: 0px;
+		will-change: transform;
+		background-color: #2874f0;
+		transform-origin: left top;
+		transform: scale(0, 1) translate3d(0, 0, 0);
+	}
+	.animateSlider{
+		transition: transform 0.2s cubic-bezier(0, 0, 0.3, 1);
+	}
+}
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.ripple {
+	position: absolute;
+	background: rgba(200, 200, 200, 0.6);
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	box-sizing: border-box;
+	opacity: 1;
+	transform:scale(0);
+}
+.ripple.animate {
+	animation: rippleAnimation 0.25s ease-out;
+}
+
+@keyframes rippleAnimation{
+		0% {
+			transform:scale(0);
+		}
+		100% {
+			opacity: 0;
+			transform:scale(1.5);
+		}
+}

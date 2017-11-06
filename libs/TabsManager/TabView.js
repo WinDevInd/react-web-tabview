@@ -194,7 +194,7 @@ class TabView extends React.Component {
 								onClick={this.tabChange.bind(this, index, tabItem || null)}
 								style={this.props.activeItemIndex === index ? selectedStyleObj : notSelectedStyleObj}
 								key={"tabheader" + index}
-								data-aid={"tabheader_" + tabItem.headerObj.props.children}>
+								data-aid={"tabheader_" + index}>
 								{tabItem.view || null}
 							</li>
 						);

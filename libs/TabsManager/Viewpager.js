@@ -44,8 +44,8 @@ class ViewPager extends React.Component{
 			position: 'relative'
 		};
 		return this.props.items.map((item, idx) => {
-			item.size = this.state.itemWidth;
-			item.height = this.props.contentHeight + this.props.emptyBoxHeight;
+			// item.size = this.state.itemWidth;
+			// item.height = this.props.contentHeight + this.props.emptyBoxHeight;
 			return <div ref={'listitem' + idx} className={styles['product-item']} key={idx} style={itemStyle}>
 				<div style={paddingStyle} />
 				{item}

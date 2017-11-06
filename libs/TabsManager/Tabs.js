@@ -1,10 +1,9 @@
-import React from "react";
-import {render} from "react-dom";
-import styles from "./Tabs.css";
-import ViewPager from "./Viewpager";
-import cx from "classnames";
-import shallowEqual from "../Utils/shallowEqual"
-import TabWidget from "./TabView";
+import React from 'react';
+import styles from './Tabs.css';
+import ViewPager from './Viewpager';
+import cx from 'classnames';
+import shallowEqual from '../Utils/shallowEqual';
+import TabWidget from './TabView';
 
 /* method to calculate inertia
 var dragOutOfBoundsMultiplier = function(val, multiplier = 1) {
