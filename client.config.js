@@ -6,7 +6,7 @@ var postcss = require('./webpack/postcss');
 var resolve = require('./webpack/resolve');
 var resolveLoader = require('./webpack/resolveLoader');
 var Extract = require('extract-text-webpack-plugin');
-var BUILD_DIR = path.resolve('./dist');
+var BUILD_DIR = path.resolve('./build/release');
 var Uglify = webpack.optimize.UglifyJsPlugin;
 
 var config = {

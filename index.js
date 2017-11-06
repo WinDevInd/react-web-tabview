@@ -1,3 +1,3 @@
 'use-strict';
 
-module.exports = require('./dist/react-tabs');
+module.exports = require('./build/release/react-tabs');
