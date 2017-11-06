@@ -2,7 +2,7 @@ import React from "react";
 import styles from './ViewPager.css';
 import shallowEqual from '../Utils/shallowEqual';
 import cx from "classnames";
-import PassiveListenerCheck from '../Utils/PassiveListenerUtil.js';
+import PassiveListenerCheck from '../Utils/PassiveListenerCheck.js';
 import throttle from 'lodash.throttle';
 
 //// let's keep it 0 for now, will be enhanced in next release.

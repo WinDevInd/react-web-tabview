@@ -1,5 +1,10 @@
-.test/
+test/
 node_modules/
+webpack/
+.npmignore
+.gitignore
+client.config.js
+build.js
 # Logs
 logs
 *.log

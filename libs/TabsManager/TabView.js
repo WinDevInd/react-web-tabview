@@ -2,8 +2,8 @@ import React from "react";
 import styles from './Tabview.css';
 import cx from "classnames";
 import shallowEqual from '../Utils/shallowEqual';
-import Ripple from "../../Mixins/RippleEffect";
-import SmoothScrollX from "../../Mixins/SmoothScrollX";
+import Ripple from "../Utils/ripple";
+import SmoothScrollX from "../Utils/smoothScrollX";
 
 class TabView extends React.Component {
 	constructor(props) {

@@ -1,0 +1,4 @@
+var path = require('path');
+module.exports = {
+	root: path.join(__dirname, '..', 'node_modules')
+};

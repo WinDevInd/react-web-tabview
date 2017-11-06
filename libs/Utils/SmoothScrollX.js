@@ -1,5 +1,7 @@
-let smoothScrollX = {
-   interpolate(start, end, point) {
+'use-strict';
+
+var smoothScroll = {
+   interpolate: function(start, end, point) {
       if (point <= start) {
          return 0;
       }
@@ -10,7 +12,7 @@ let smoothScrollX = {
       return x * x * (3 - 2 * x);
    },
 
-   polyfillWindowPerformance() {
+   polyfillWindowPerformance: function() {
       // standard polyfill by Paul Irish:: https://gist.github.com/paulirish/5438650
       if ("performance" in window === false) {
          window.performance = {};
@@ -30,9 +32,9 @@ let smoothScrollX = {
       }
    },
 
-   scroll(element, position, _duration, onScrollEndCallback) {
+   scroll: function(element, position, _duration, onScrollEndCallback) {
       // now we are sure to have window.performance.now()
-      let duration = _duration || 1,
+      var duration = _duration || 1,
          scrollContainer = element,
          startLeft = element.scrollLeft,
          startTime = window.performance.now(),
@@ -48,7 +50,7 @@ let smoothScrollX = {
             requestAnimationFrame(callback);
          }
 
-         let point = this.interpolate(startTime, endTime, timestamp),
+         var point = this.interpolate(startTime, endTime, timestamp),
             scrollLeft = Math.round(startLeft + (destY * point));
          if (destY <= startLeft) {
             if (destY === 0) {
@@ -67,4 +69,4 @@ let smoothScrollX = {
       callback(startTime);
    }
 };
-module.exports = smoothScrollX;
+module.exports = smoothScroll;
